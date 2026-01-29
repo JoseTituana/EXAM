@@ -10,7 +10,7 @@ int main(){
         printf(" 2.- Reservar habitacioin\n");
         printf(" 3.- guardar y salir");
         printf(" elija opcion...");
-        scanf("%d",opcion);
+        scanf("%d",&opcion);
         switch (opcion)
         {
         case 1:
@@ -25,9 +25,8 @@ int main(){
             break;    
         default:
             printf(" no Valido \n");
+            
         } 
-        while(opcion != 3);
-
-    }
+    }while(opcion != 3);
     return 0;
 }
